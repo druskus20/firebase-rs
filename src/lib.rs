@@ -1,4 +1,4 @@
-use constants::{Method, Response, AUTH};
+use constants::{Method, AUTH};
 use errors::{RequestResult, UrlParseResult};
 use params::Params;
 use reqwest::StatusCode;
@@ -11,6 +11,7 @@ use utils::check_uri;
 
 use crate::sse::ServerEvents;
 
+pub use constants::Response;
 pub use errors::{RequestError, ServerEventError, UrlParseError};
 
 mod constants;
